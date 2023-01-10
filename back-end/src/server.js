@@ -14,6 +14,10 @@ knex.migrate
     knex.destroy();
   });
 
+process.on("uncaughtException", function (err) {
+  console.log(err);
+});
+
 function listener() {
   console.log(`Listening on Port ${PORT}!`);
 }
