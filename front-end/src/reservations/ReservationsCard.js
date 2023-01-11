@@ -1,4 +1,4 @@
-export default function ReservationsCard({changeHandler, formData}){
+export default function ReservationsCard({ changeHandler, formData }) {
   return (
     <>
       <form id="reservationCard">
