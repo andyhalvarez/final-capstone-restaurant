@@ -2,7 +2,7 @@
 
 ## Live application URL
 
-`https://pt-restaurant-frontend.herokuapp.com/dashboard`
+`https://final-capstone-restaurant-efxn.vercel.app/dashboard`
 
 ## Technology Used
 
