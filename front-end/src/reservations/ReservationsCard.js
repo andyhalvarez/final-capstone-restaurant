@@ -41,6 +41,7 @@ export default function ReservationsCard({ changeHandler, formData }) {
               id="mobile_number"
               name="mobile_number"
               type="tel"
+              maxLength={10}
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               className="form-control"
               placeholder="xxx-xxx-xxxx"

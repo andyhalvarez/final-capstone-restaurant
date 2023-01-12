@@ -24,6 +24,9 @@ export default function CreateReservations() {
     if (target.name === "people") {
       value = Number(value);
     }
+    if (target.name === "mobile_number") {
+      value = value.replace(/\D/g, "");
+    }
     setFormData({
       ...formData,
       [target.name]: value,
@@ -47,9 +50,9 @@ export default function CreateReservations() {
 
   return (
     <>
-      <h1>Create Reservation</h1>
+      <h2>Create Reservation</h2>
       <ErrorAlert error={reservationsError} />
-      <ReservationsCard changeHandler={changeHandler} formData={formData}  />
+      <ReservationsCard changeHandler={changeHandler} formData={formData} />
       <button className="btn btn-secondary mr-2" onClick={history.goBack}>
         Cancel
       </button>
@@ -64,5 +67,3 @@ export default function CreateReservations() {
     </>
   );
 }
-
-

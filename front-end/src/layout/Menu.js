@@ -11,17 +11,15 @@ import { Link } from "react-router-dom";
 function Menu() {
   return (
     <nav className="navbar navbar-dark align-items-start p-0">
-      <div className="container-fluid d-flex flex-column p-0">
+      <div className="container-fluid flex-column justify-content-start p-0">
         <Link
           className="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
           to="/"
         >
-          <div className="sidebar-brand-text mx-3">
-            <h1>Periodic Tables</h1>
-          </div>
+          <h1 className="text-wrap">Periodic Tables</h1>
         </Link>
         <hr className="sidebar-divider my-0" />
-        <ul className="nav navbar-nav text-white" id="accordionSidebar">
+        <ul className="nav navbar-nav text-white w-100" id="accordionSidebar">
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard">
               <span className="oi oi-dashboard" />
